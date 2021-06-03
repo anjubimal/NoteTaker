@@ -1,17 +1,64 @@
-
-
 {
-    "notes": [
-        {
-            "id": "0",
-            "name": "Spindle",
-            "species": "bear",
-            "diet": "omnivore",
-            "personalityTraits": [
-                "hungry",
-                "zany",
-                "loving"
-            ]
-        }
-    ]
+  "notes": [
+    {
+      "id": "0",
+      "name": "Spindle",
+      "species": "bear",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry",
+        "zany",
+        "loving"
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Spindle",
+      "species": "bear",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry",
+        "zany",
+        "loving"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Spindle",
+      "species": "bear",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry",
+        "zany",
+        "loving"
+      ]
+    },
+    {
+      "id": "1"
+    },
+    {
+      "id": "2"
+    },
+    {
+      "id": "5"
+    },
+    {
+      "id": "6"
+    },
+    {
+      "title": "bvnbvnb",
+      "text": "bvvb\n",
+      "id": "7"
+    },
+    {
+      "title": "gjhgjh",
+      "text": "bmnmbn",
+      "id": "8"
+    },
+    {
+      "title": "bnvbn",
+      "text": "nbvb",
+      "id": "9"
+    }
+  ]
 }
