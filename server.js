@@ -4,7 +4,7 @@ const path = require('path');
 const express = require('express');
 const app = express();
 
-const {notes} = require('./db/db');
+let {notes} = require('./db/db');
 const PORT = process.env.PORT || 3001;
 
 //parse incoming string or array data
@@ -50,6 +50,36 @@ function createNewNotes(body, notesArray){
 
     return note;
 }
+    app.delete('/api/notes/:id', function(req,res){
+        let remaining = [];
+        // let notes = req.body;
+
+        for (let i=0;i<notes.length;i++){
+            if(notes[i].id !== req.params.id){
+                remaining.push(notes[i]);
+            }
+
+        }
+
+        notes = remaining
+        fs.writeFileSync('./db/db.json', JSON.stringify(notes), function(err,res){
+            if(err){
+                throw err;
+            }
+        });
+        res.json(notes)
+    })
+
+
+    // const note = body;
+    // // notesArray.push(note);
+    // //whatever id is equal to the id it concerns delete it 
+    // let 
+
+    
+
+   
+
 
 
 app.get('/', (req, res) => {
